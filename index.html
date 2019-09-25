@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WJewett - WebDeveloper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+  <nav>
+    <div class="nav">
+      <h5 class="nav-item nav-name"><a href="http://wjewett.com">wjewett.com</a></h5>
+      <p class="nav-item nav-text"><a href="mailto:wjewett@gmail.com">wjewett@gmail.com</a></p>
+      <p class="nav-item nav-text">(706)-399-1536</p>
+      <p class="nav-item nav-text"><a href="wjewett_resume.pdf">Résumé</a></p>
+
+      <div class="nav-links">
+        <a class="nav-text nav-link" href="https://github.com/wjewett" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="nav-text nav-link" href="https://www.linkedin.com/in/william-jewett-8a5054191/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <section class="section-header">
+      <div class="row">
+        <div class="">
+          <div class="header">
+            <div class="heading-box">
+              <h6 class="heading-primary">William Jewett</h6>
+              <h5 class="heading-secondary">&nbsp;Web Developer</h5>
+              <!-- <h6 class="heading-secondary">&nbsp;focusing on Front-End</h6> -->
+            </div>
+            <div class="two columns offset-by-five arrow-box"><a href="#projects"><i class="fa fa-arrow-circle-o-down" id="down-arrow" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-projects">
+    <a name="projects"></a> 
+
+      <div class="project-links">
+        <div class="projects-tab"><h6 class="projects-header">Projects</h6></div>
+        <a href="https://www.linkedin.com/in/william-jewett-8a5054191/" target="_blank"><i class="fa fa-linkedin project-icons" aria-hidden="true"></i></a>
+        <a href="https://github.com/wjewett" target="_blank"><i class="fa fa-github project-icons" aria-hidden="true"></i></a>
+      </div>
+      
+      <div class="projects">
+        <div class="projects-container">
+          <div class="row">
+            <div class="col-3-of-4">
+              <div class="project-main-box">
+                <div class="project-main-heading">
+                  <h3>MovieDB</h3>
+                  <h6>A front-end application to keep track of your movie collection.</h6>
+                </div>
+                <div class="project-main-img">
+                  <img class="main-img" src="images/project-1.jpg">
+                </div>
+                <div class="project-main-button">
+                  <div class="dropdown">
+                    <a class="button button-green">Details</a>
+                    <div class="dropdown-content">
+                      <a href="#">Built with vanilla JavaScript and Bootstrap</a>
+                      <a href="#">Makes fetch API calls to Open Movie Database</a>
+                      <a href="#">Search for movie(s) and then select which ones to add to your collection</a>
+                      <a href="#">Movie collection is stored in browser local storage</a>
+                      <a href="#">Export/Import your collection to/from a JSON file</a>
+                      <a href="#">Filter your collection by title, raiting, release, runtime, genre, format or resolution</a>
+                      <a href="#">Edit the genre, resolution and format of your movies in a modal</a>
+                      <a href="#">Search results and collection listings contain links to IMDb page</a>
+                      <a href="#">Table constantly updates without leaving the page</a>
+                    </div>
+
+                  </div>
+                  <a href="movieDB/" class="button button-blue" target="_blank">Demo</a>
+                  <a href="https://github.com/wjewett/moviedb-localstorage" target="_blank" class="button button-gray">Code</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-2-of-4">
+              <div class="project-other-heading">
+                <h3>PokémonStay</h3>
+                <h6>A fullstack RESTful application with authentication.</h6>
+              </div>
+              <div class="project-other-box">
+                <div class="project-other-img">
+                  <img class="other-img" id="project-3" src="images/project-2.jpg" alt="">
+                </div>
+                <div class="project-other-button">
+                  <div class="dropdown">
+                    <a class="button button-green">Details</a>
+                    <div class="dropdown-content">
+                      <a>Fullstack app built with Node.js, MongoDB, Express, Passport, and many others</a>
+                      <a>Semantic UI used for styling foundation</a>
+                      <a>Access only your collection (Authentication/Authorization)</a>
+                      <a>Collection is stored in MongoDB</a>
+                      <a>Fetch calls to Pokéapi for information</a>
+                      <a>A search of a collection in MongoDB also used for additional information</a>
+                      <a>For Pokémon that evolve in multiple mons, a random generator determines what it evolves into.</a>
+                    </div>
+                  </div>
+                  <a href="http://wjewett.herokuapp.com/" target="_blank" class="button button-blue">Demo</a>
+                  <a href="https://github.com/wjewett/pokemonStay" target="_blank" class="button button-gray">Code</a>
+                </div>
+                <p id="password">Use "test" for username/password to jump in, or register a new login.</p>
+              </div>
+            </div>
+
+            <div class="col-2-of-4">
+              <div class="project-other-heading">
+                <h3>Battle Timer</h3>
+                <h6>A Node and Socket.io application built for the Raspberry Pi.</h6>
+              </div>
+              <div class="project-other-box">
+                <div class="project-other-img">
+                  <img class="other-img" id="project-2" src="images/project-3.jpg" alt="" srcset="">
+                </div>
+                <div class="project-other-button">
+                  <div class="dropdown">
+                    <a class="button button-green">Details</a>
+                    <div class="dropdown-content">
+                      <a>Uses Node and Socket.io on backend for timer</a>
+                      <a>Built for use on Raspberry Pi with Rasperian.</a>
+                      <a>Master button starts timer, 4 player buttons stop timers.</a>
+                      <a>Originally built for Rubik's cube solving competition.</a>
+                      <a>Demo link is for a simulation which has a 5 second max time.</a>
+                    </div>
+                  </div>
+                  <a href="http://cube-battle-timer.herokuapp.com/" class="button button-blue" target="_blank">Demo</a>
+                  <a href="https://github.com/wjewett/cube-battle-timer" class="button button-gray" target="_blank">Code</a>
+                </div>
+                <p id="simulate">Click 'Simulate' to start, and after it's done click 'Finalize Times'.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+
+            <div class="col-2-of-4">
+              <div class="project-other-heading">
+                <h3>Form Validation</h3>
+                <h6>Using regular expressions and custom validity messages.</h6>
+              </div>
+              <div class="project-other-box">
+                <div class="project-other-img">
+                  <img class="other-img" id="project-3" src="images/project-4.jpg" alt="">
+                </div>
+                <div class="project-other-button">
+                  <div class="dropdown">
+                    <a class="button button-green">Details</a>
+                    <div class="dropdown-content">
+                      <a>Acceptable formats for various text inputs.</a>
+                      <a>Uses regular expressions (regex) in the pattern attribute of the HTML.</a>
+                      <a>Additional regex and custom validity messages used in the JavaScript.</a>
+                      <a>Input border colors give feedback for invalid entries.</a>
+                    </div>
+                  </div>
+                  <a href="form-validation/" target="_blank" class="button button-blue">Demo</a>
+                  <a href="https://github.com/wjewett/form-validation" target="_blank" class="button button-gray">Code</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2-of-4">
+              <div class="project-other-heading">
+                <h3>Rubik's Cubes</h3>
+                <h6>A CSS project displaying rubik's cubes.</h6>
+              </div>
+              <div class="project-other-box">
+                <div class="project-other-img">
+                  <img class="other-img" id="project-2" src="images/project-5.jpg" alt="" srcset="">
+                </div>
+                <div class="project-other-button">
+                  <div class="dropdown">
+                    <a class="button button-green">Details</a>
+                    <div class="dropdown-content">
+                      <a>Styling done with SCSS and node-sass. All styling, no JavaScript.</a>
+                      <a>Rotating card effect</a>
+                      <a>Photoshop used for transparent background in images</a>
+                    </div>
+                  </div>
+                  <a href="cubes/" class="button button-blue" target="_blank">Demo</a>
+                  <a href="https://github.com/wjewett/favorite-cubes" class="button button-gray" target="_blank">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+      
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

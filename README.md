@@ -1,0 +1,1 @@
+My first portfolio page. The design was largely inspired by the MASSIVELY template on HTML5up.net, but was completely coded by me, William Jewett.
